@@ -1,0 +1,14 @@
+<h1>Welcome</h1>
+<div class="container">
+    <p>Welcome {{name}} to our awesom App.</p>
+    <p>You can mange yor todos <a [routerLink]="['/todos']">here</a></p>
+
+</div>
+<div class="container">
+  Click here to get ac ustomized welcome message
+  <button class="btn btn-primary" (click)="getWelcomeWithParam()">Get Welcome message</button>
+</div>
+<div class="container" *ngIf="message">
+  <h2>Your Customized Welcome Message</h2>
+  {{message}}
+</div>
